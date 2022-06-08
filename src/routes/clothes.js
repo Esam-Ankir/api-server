@@ -10,6 +10,8 @@ ClothesRouter.post("/clothes", createClothes);
 ClothesRouter.put("/clothes/:id", updateClothes);
 ClothesRouter.delete("/clothes/:id", deleteClothes);
 // app.get("/clothe", validator, (req, res) => {getclothe});
+
+
 async function getClothes(req, res) {
   const allClothes = await ClothesTable.read();
   res.status(200).json(allClothes);

@@ -10,6 +10,7 @@ class Collection {
             console.error("error in creating a new record in model ", this.model)
         }
     }
+
     async read(data_id) {
         try {
             let record = null;
@@ -25,6 +26,7 @@ class Collection {
             console.error("error in reading record in model ", this.model)
         }
     }
+
     async update(obj) {
         try {
             let updated = await record.update(obj);
@@ -33,6 +35,7 @@ class Collection {
             console.error("error in updating record in model ", this.model)
         }
     }
+    
     async delete(data_id) {
         if (!data_id) {
             throw new Error('no id provided for model ', this.model)

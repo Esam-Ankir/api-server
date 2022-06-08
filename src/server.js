@@ -13,6 +13,10 @@ const logger = require('./middleware/logger');
 app.get("/",(req,res) => {
     res.send("This is the home page");
 })
+app.get("/foods",(req,res) => {
+    res.status(500).send("500 internal error");
+})
+
 app.use(express.json());
 app.use(logger);
 app.use(foodRouter);
