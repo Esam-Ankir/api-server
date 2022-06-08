@@ -1,0 +1,34 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "Dynamic API Phase 3: Adding Database Abstraction and Associations to API",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --coverage --verbose",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "start": "NODE_ENV=production node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esam-Ankir/api-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Esam-Ankir/api-server/issues"
+  },
+  "homepage": "https://github.com/Esam-Ankir/api-server#readme",
+  "keywords": [],
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.16",
+    "pg": "^8.7.3",
+    "sequelize": "^6.20.1",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "supertest": "^6.2.3"
+  }
+}
