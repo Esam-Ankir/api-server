@@ -15,10 +15,6 @@ describe('Web server', () => {
     const response = await mockRequest.get('/abc');
     expect(response.status).toBe(404);
   });
-  // it('Should respond with 500 status on an invalid route', async () => {
-  //   const response = await mockRequest.get('/foods');
-  //   expect(response.status).toBe(500);
-  // });
   it('Should respond with 404 status on an invalid method', async () => {
     const response = await mockRequest.patch('/food');
     expect(response.status).toBe(404);

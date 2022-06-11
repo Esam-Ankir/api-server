@@ -22,7 +22,11 @@ Dynamic API Phase 3: Adding Database Abstraction and Associations to API
 
 [clothes route](https://api-server-esamankir.herokuapp.com/clothes)
 
+## UML diagram for this server:
 
+![img](./assets/UML1.PNG)
+
+## Work process screenshots:
 
 ![img](./assets/11.PNG)
 ![img](./assets/22.PNG)
